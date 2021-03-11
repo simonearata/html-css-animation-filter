@@ -1,0 +1,160 @@
+/* ESERCIZIO NUMERO 1  */
+.ex-1-square{
+  transition: 2s;
+}
+
+.ex-1-square:hover{
+  background-color: red;
+}
+
+/* ESERCIZIO NUMERO 2  */
+.ex-2-square{
+  transition: 2s;
+}
+
+.ex-2-square:active{
+  width: 100%;
+}
+
+/* ESERCIZIO NUMERO 3  */
+.ex-3-square{
+  transition: 1s;
+}
+
+.ex-3-square:hover{
+  border-radius: 100%;
+}
+
+/* ESERCIZIO NUMERO 4  */
+.ex-4-square{
+  transition: 1s;
+}
+
+.ex-4-square:hover{
+  opacity: 0;
+}
+
+/* ESERCIZIO NUMERO 5  */
+.ex-5-square{
+  transition: 1s;
+}
+
+.ex-5-square:hover{
+  transform: scale(2);
+}
+
+.ex-5-square:active{
+  transform: scale(0.5);
+}
+
+/* ESERCIZIO NUMERO 6  */
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+
+/* ESERCIZIO NUMERO 7  */
+.ex-7-img{
+  transition: 2s;
+}
+
+.ex-7-img:hover{
+  filter: sepia(0.8) grayscale(1);
+}
+
+/* ESERCIZIO NUMERO 8  */
+.ex-8-img{
+  transition: 2s;
+}
+
+.ex-8-img:hover{
+  filter: sepia(0.8) grayscale(0.8);
+  border-radius: 20px;
+}
+
+/* ESERCIZIO NUMERO 9  */
+.ex-9-img{
+  transition: 2s;
+}
+
+.ex-9-img:hover{
+  filter: sepia(0.8) grayscale(0.5);
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+
+/* ESERCIZIO NUMERO 10  */
+.ex-10-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(1turn);
+  }
+}
+
+/* ESERCIZIO NUMERO 11  */
+.ex-11-icon:hover{
+  animation: spin2 2s linear infinite;
+}
+
+@keyframes spin2{
+  0%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+/* ESERCIZIO NUMERO 12  */
+.ex-12-button:hover .ex-12-top-white{
+  animation: spostabordiup 2s linear;
+}
+
+@keyframes spostabordiup{
+  0%{
+    left: 0%;
+  }
+  50%{
+    left: calc(100% - 60px)
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: spostabordidown 2s linear;
+}
+
+@keyframes spostabordidown{
+  0%{
+    right: 0%;
+  }
+  50%{
+    right: calc(100% - 60px)
+  }
+  100%{
+    right: 0%;
+  }
+}
+
+/* ESERCIZIO NUMERO 13  */
+.ex-13-button:hover .ex-13-top-white{
+  animation: spostabordisugiro 2s linear;
+}
+
+@keyframes spostabordisugiro{
+  0%{
+    left: 0%;
+    top: 0;
+  }
+  25%{
+    left: calc(100% - 60px);
+    top: 0;
+  }
+}
